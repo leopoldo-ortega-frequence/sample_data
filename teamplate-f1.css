@@ -1,0 +1,40 @@
+/* Will want to dynamic styles here */
+:root {
+    --primary: #e89a41;
+    --secondary: #cb673d;
+    --teriary: #99273a;
+    --quaternary: #54354a;
+    --light: #fff;
+    --font-family: 'Lato', sans-serif;
+}
+
+/* Utilities classes, meant to be reused across multiple components */
+.bg-light {
+    background-color: var(--light);
+}
+.bg-primary {
+    background-color: var(--primary);
+}
+.bg-secondary {
+    background-color: var(--secondary);
+}
+.bg-tertiary {
+    background-color: var(--tertiary);
+}
+.bg-quaternary {
+    background-color: var(--quaternary);
+}
+
+.btn-primary {
+    background-color: var(--light);
+    color: var(--primary);
+    padding: 10px 1rem;
+    border-radius: 15px;
+}
+
+/* main styles - template specific  */
+
+.body-template-f1 {
+    font-family: var(--font-family)
+}
+
