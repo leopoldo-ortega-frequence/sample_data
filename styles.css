@@ -3,6 +3,11 @@
     --secondary: #2196f3;
     --tertiary: #42a5f5;
     --quaternary: #64b5f6;
+    --red: #e53935;
+    --teal: #009688;
+    --green:#4caf50;
+    --orange:#fb8c00;
+    --transition-default: all ease 300ms;
 }
 
 /* base styles */
@@ -10,11 +15,11 @@
 button {
     border: none;
     outline: none;
-    transition: all ease 300ms;
+    transition: var(--transition-default);
 }
 
 button:hover{
-    transition: all ease 300ms;
+    transition: var(--transition-default)
 }
 
 button:hover {
@@ -54,6 +59,18 @@ button:hover {
 .bg-quaternary {
     background-color: var(--quaternary);
 }
+.bg-red{
+    background-color: var(--red);
+}
+.bg-teal{
+    background-color: var(--teal);
+}
+.bg-orange{
+    background-color: var(--orange);
+}
+.bg-green{
+    background-color: var(--green);
+}
 
 .btn-primary {
     background-color: var(--primary);
@@ -61,6 +78,7 @@ button:hover {
     color: white;
     box-shadow: 1px 2px 7px 1px #6f6f6f;
     opacity: 1;
+    transition: var(--transition-default);
 }
 
 .btn-primary.inverse{
@@ -70,6 +88,7 @@ button:hover {
 
 .btn-primary:hover{
     opacity: 0.8;
+    transition: var(--transition-default);
 }
 
 .btn-secondary{
@@ -79,10 +98,12 @@ button:hover {
     border-radius: 20px;
     border: 2px solid var(--primary);
     box-shadow: none;
+    transition: var(--transition-default);
 }
 
 .btn-secondary:hover{
     box-shadow: 1px 2px 8px 3px var(--primary);
+    transition: var(--transition-default);
 }
 
 .btn-outline{
@@ -90,12 +111,14 @@ button:hover {
     background-color: white;
     color: var(--primary);
     padding: 10px 1rem;
+    transition: var(--transition-default);
 }
 
 .btn-outline:hover{
     color: white;
     border: 2px solid var(--primary);
     background-color: var(--quaternary);
+    transition: var(--transition-default);
 }
 
 .text-container {
